@@ -319,7 +319,7 @@ Shader "Hidden/lilToonRefractionBlur"
         Tags {"RenderType" = "Opaque" "Queue" = "Transparent"}
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Forward Blur
         Pass
@@ -358,7 +358,7 @@ Shader "Hidden/lilToonRefractionBlur"
         }
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Forward
         Pass
@@ -467,7 +467,7 @@ Shader "Hidden/lilToonRefractionBlur"
         Tags {"RenderType" = "Opaque" "Queue" = "Transparent" "ShaderModel" = "4.5"}
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Blur
         Pass
@@ -507,7 +507,7 @@ Shader "Hidden/lilToonRefractionBlur"
         }
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Forward
         Pass
@@ -573,7 +573,7 @@ Shader "Hidden/lilToonRefractionBlur"
         Tags {"RenderType" = "Opaque" "Queue" = "Transparent"}
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Blur
         Pass
@@ -612,7 +612,7 @@ Shader "Hidden/lilToonRefractionBlur"
         }
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Forward
         Pass
@@ -682,7 +682,7 @@ Shader "Hidden/lilToonRefractionBlur"
         Tags {"RenderType" = "Opaque" "Queue" = "Transparent" "ShaderModel" = "4.5"}
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Blur
         Pass
@@ -722,7 +722,7 @@ Shader "Hidden/lilToonRefractionBlur"
         }
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Forward
         Pass
@@ -790,7 +790,7 @@ Shader "Hidden/lilToonRefractionBlur"
         Tags {"RenderType" = "Opaque" "Queue" = "Transparent"}
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Blur
         Pass
@@ -829,7 +829,7 @@ Shader "Hidden/lilToonRefractionBlur"
         }
 
         // GrabPass
-        GrabPass {}
+        Grabpass {"_BackgroundTexture}
 
         // Forward
         Pass
