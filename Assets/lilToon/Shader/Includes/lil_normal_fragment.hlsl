@@ -560,13 +560,13 @@ float4 frag(v2f input, float facing : VFACE) : SV_Target
                 float blurOffset = perceptualRoughness / input.positionSS.z * (0.0005 / LIL_REFRACTION_SAMPNUM);
                 for(int j = -16; j <= 16; j++)
                 {
-                    refractCol += LIL_SAMPLE_2D(_GrabTexture, sampler_GrabTexture, refractUV + float2(0,j*blurOffset)).rgb * LIL_REFRACTION_GAUSDIST(j);
+                    refractCol += LIL_SAMPLE_2D(_BackgroundTexture2, sampler_BackgroundTexture2, refractUV + float2(0,j*blurOffset)).rgb * LIL_REFRACTION_GAUSDIST(j);
                     sum += LIL_REFRACTION_GAUSDIST(j);
                 }
                 refractCol /= sum;
                 refractCol *= _RefractionColor.rgb;
             #elif defined(LIL_REFRACTION_BLUR2)
-                float3 refractCol = LIL_SAMPLE_2D(_GrabTexture, sampler_GrabTexture, refractUV).rgb * _RefractionColor.rgb;
+                float3 refractCol = LIL_SAMPLE_2D(_BackgroundTexture2, sampler_BackgroundTexture2, refractUV).rgb * _RefractionColor.rgb;
             #else
                 float3 refractCol = LIL_SAMPLE_2D(_BackgroundTexture, sampler_BackgroundTexture, refractUV).rgb * _RefractionColor.rgb;
             #endif

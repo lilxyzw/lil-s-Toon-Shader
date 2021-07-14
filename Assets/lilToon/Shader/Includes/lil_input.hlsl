@@ -10,15 +10,16 @@
 
 TEXTURE3D(_DitherMaskLOD);
 TEXTURE2D(_BackgroundTexture);
-TEXTURE2D(_GrabTexture);
+TEXTURE2D(_BackgroundTexture2);
 TEXTURE2D(_CameraDepthTexture);
 SAMPLER(sampler_linear_repeat);
 SAMPLER(sampler_linear_clamp);
 SAMPLER(sampler_DitherMaskLOD);
 SAMPLER(sampler_BackgroundTexture);
-SAMPLER(sampler_GrabTexture);
+SAMPLER(sampler_BackgroundTexture2);
 SAMPLER(sampler_CameraDepthTexture);
-float4 _GrabTexture_TexelSize;
+float4 _BackgroundTexture_TexelSize;
+float4 _BackgroundTexture2_TexelSize;
 
 //------------------------------------------------------------------------------------------------------------------------------
 // Texture Exists
